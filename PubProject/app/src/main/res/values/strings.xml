@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IntelligenceSystemApp</string>
+    <string name="str_ddn">达达鸟</string>
+    <string name="str_hydl">欢迎登录</string>
+    <string name="str_srsjh">输入手机号</string>
+    <string name="str_xyb">下一步</string>
+    <string name="str_dsfzhdl">第三方账号登录</string>
+</resources>
