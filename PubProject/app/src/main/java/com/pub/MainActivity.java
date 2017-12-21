@@ -1,5 +1,6 @@
 package com.pub;
 
+import android.animation.Animator;
 import android.graphics.drawable.Drawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -7,6 +8,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -22,6 +24,8 @@ import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.map.UiSettings;
 import com.baidu.mapapi.model.LatLng;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.junshan.pub.utils.AppUtils;
 import com.pub.contract.MainContract;
 import com.pub.databinding.ActivityMainBinding;
@@ -54,8 +58,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, Object> impl
     @Override
     public void initOnCreate(@Nullable Bundle savedInstanceState) {
         super.initOnCreate(savedInstanceState);
-        presenter = new MainPresenter(this, this);
+        presenter = new MainPresenter(this, this, mBinding);
         presenter.checkPsermissions();
+        presenter.initSlidingMenu();
         isSlidingClose = false;
         setStatusBar();
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);//获取传感器管理服务
@@ -173,6 +178,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, Object> impl
     protected void initData() {
         super.initData();
         List<String> data = new ArrayList<>();
+        data.add("附近");
         data.add("公厕");
         data.add("百货");
         data.add("工具");
@@ -274,6 +280,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, Object> impl
     protected void initEvent() {
         super.initEvent();
         mBinding.btnLocation.setOnClickListener(this);
+        mBinding.ivLeft.setOnClickListener(this);
+        mBinding.ivRight.setOnClickListener(this);
+        mBinding.btnSearch.setOnClickListener(this);
     }
 
     @Override
@@ -286,6 +295,25 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, Object> impl
                     onLocationSuccess(locationManager.getmLocation());
                 }
                 break;
+            case R.id.btn_search:
+                mBinding.sv.setVisibility(View.VISIBLE);
+                YoYo.with(Techniques.ZoomInUp)
+                        .duration(400)
+                        .repeat(0)
+                        .onEnd(new YoYo.AnimatorCallback() {
+                            @Override
+                            public void call(Animator animator) {
+
+                            }
+                        })
+                        .playOn(findViewById(R.id.sv));
+                break;
+            case R.id.iv_left:
+                presenter.opentDrawer();
+                break;
+            case R.id.iv_right:
+
+                break;
         }
     }
 
@@ -297,5 +325,31 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, Object> impl
     @Override
     public void onFailure(Throwable e, long mTag) {
 
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            //关闭搜索
+            if (mBinding.sv.getVisibility() == View.VISIBLE) {
+                YoYo.with(Techniques.ZoomOutDown)
+                        .duration(400)
+                        .repeat(0)
+                        .onEnd(new YoYo.AnimatorCallback() {
+                            @Override
+                            public void call(Animator animator) {
+                                mBinding.sv.setVisibility(View.GONE);
+                            }
+                        })
+                        .playOn(findViewById(R.id.sv));
+                return true;
+            }
+            //关闭抽屉
+            if (presenter.isOpentDrawer()) {
+                presenter.opentDrawer();
+                return true;
+            }
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

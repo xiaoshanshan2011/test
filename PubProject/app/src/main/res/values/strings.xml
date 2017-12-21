@@ -5,4 +5,15 @@
     <string name="str_srsjh">输入手机号</string>
     <string name="str_xyb">下一步</string>
     <string name="str_dsfzhdl">第三方账号登录</string>
+    <string name="str_qsrssnr">（附近）输入搜索内容</string>
+    <string name="str_ss">搜索</string>
+    <string name="str_ssls">搜索历史</string>
+    <string name="str_rmbq">热门标签</string>
+    <string name="str_qb">我的钱包</string>
+    <string name="str_dd">我的订单</string>
+    <string name="str_kf">联系客服</string>
+    <string name="str_sz">我的设置</string>
+    <string name="str_cwsj">成为商家</string>
+    <string name="str_tjyj">推荐有奖</string>
+    <string name="str_ptyh">普通用户</string>
 </resources>

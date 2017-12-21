@@ -14,5 +14,11 @@ public interface MainContract {
 
     interface Presenter {
         void checkPsermissions();
+
+        void initSlidingMenu();
+
+        void opentDrawer();
+
+        boolean isOpentDrawer();
     }
 }
