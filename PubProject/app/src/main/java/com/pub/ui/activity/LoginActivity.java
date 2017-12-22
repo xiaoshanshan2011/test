@@ -8,9 +8,9 @@ import com.pub.MainActivity;
 import com.pub.R;
 import com.pub.contract.LoginContract;
 import com.pub.databinding.FgLoginLayoutBinding;
-import com.pub.net.BaseBean;
 import com.pub.presenter.LoginPresenter;
 import com.pub.ui.BaseActivity;
+import com.shan.netlibrary.net.BaseBean;
 
 /**
  * 登录

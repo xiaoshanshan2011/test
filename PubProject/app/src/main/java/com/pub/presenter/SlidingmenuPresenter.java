@@ -3,7 +3,7 @@ package com.pub.presenter;
 import android.content.Context;
 
 import com.pub.contract.SlidingmenuContract;
-import com.pub.net.HttpPresenter;
+import com.shan.netlibrary.net.HttpPresenter;
 
 /**
  * 侧滑菜单

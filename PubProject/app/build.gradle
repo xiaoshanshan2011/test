@@ -65,8 +65,9 @@ android {
 dependencies {
     provided fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile project(':publiclibrary')
     compile files('libs/BaiduLBS_Android.jar')
     compile 'com.daimajia.easing:library:2.0@aar'
     compile 'com.daimajia.androidanimations:library:2.3@aar'
+    compile project(':merchant')
+    compile project(':netlibrary')
 }

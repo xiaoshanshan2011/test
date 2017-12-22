@@ -9,9 +9,11 @@ import com.junshan.pub.utils.AppUtils;
 import com.pub.R;
 import com.pub.contract.SlidingmenuContract;
 import com.pub.databinding.FgSlidingmenuLayoutBinding;
-import com.pub.net.BaseBean;
 import com.pub.presenter.SlidingmenuPresenter;
 import com.pub.ui.BaseFragment;
+import com.shan.netlibrary.net.BaseBean;
+
+//import com.pub.net.BaseBean;
 
 /**
  * 侧滑菜单

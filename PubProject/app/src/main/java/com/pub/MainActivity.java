@@ -30,9 +30,9 @@ import com.junshan.pub.utils.AppUtils;
 import com.pub.contract.MainContract;
 import com.pub.databinding.ActivityMainBinding;
 import com.pub.manager.LocationManager;
-import com.pub.net.BaseBean;
 import com.pub.presenter.MainPresenter;
 import com.pub.ui.BaseActivity;
+import com.shan.netlibrary.net.BaseBean;
 
 import java.util.ArrayList;
 import java.util.List;

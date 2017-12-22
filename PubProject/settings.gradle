@@ -1,1 +1,1 @@
-include ':app', ':publiclibrary', ':xrecyclerview', ':sharelibrary'
+include ':app', ':publiclibrary', ':xrecyclerview', ':sharelibrary', ':merchant', ':netlibrary'
