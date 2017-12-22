@@ -44,7 +44,7 @@ public class SlidingmenuFragment extends BaseFragment<FgSlidingmenuLayoutBinding
     @Override
     protected void initEvent() {
         super.initEvent();
-
+        mBinding.getRoot().setOnClickListener(this);
     }
 
     @Override

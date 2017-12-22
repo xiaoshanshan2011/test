@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/d10"
                     android:text="175****8654"
-                    android:textColor="@color/color_333333"
+                    android:textColor="@color/color_666666"
                     android:textSize="@dimen/d18" />
 
                 <com.zhy.android.percent.support.PercentLinearLayout
@@ -63,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text="@string/str_ptyh"
-                        android:textColor="@color/color_333333"
+                        android:textColor="@color/color_666666"
                         android:textSize="@dimen/d12" />
                 </com.zhy.android.percent.support.PercentLinearLayout>
 
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
                     android:text="@string/str_qb"
-                    android:textColor="@color/color_333333"
+                    android:textColor="@color/color_666666"
                     android:textSize="@dimen/d15" />
             </com.zhy.android.percent.support.PercentLinearLayout>
 
@@ -114,7 +114,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
                     android:text="@string/str_dd"
-                    android:textColor="@color/color_333333"
+                    android:textColor="@color/color_666666"
                     android:textSize="@dimen/d15" />
             </com.zhy.android.percent.support.PercentLinearLayout>
 
@@ -138,7 +138,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
                     android:text="@string/str_kf"
-                    android:textColor="@color/color_333333"
+                    android:textColor="@color/color_666666"
                     android:textSize="@dimen/d15" />
             </com.zhy.android.percent.support.PercentLinearLayout>
 
@@ -162,7 +162,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
                     android:text="@string/str_sz"
-                    android:textColor="@color/color_333333"
+                    android:textColor="@color/color_666666"
                     android:textSize="@dimen/d15" />
             </com.zhy.android.percent.support.PercentLinearLayout>
         </com.zhy.android.percent.support.PercentLinearLayout>
@@ -192,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/str_cwsj"
-                    android:textColor="@color/color_333333"
+                    android:textColor="@color/color_666666"
                     android:textSize="@dimen/d11" />
             </LinearLayout>
 
@@ -214,7 +214,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/str_tjyj"
-                    android:textColor="@color/color_333333"
+                    android:textColor="@color/color_666666"
                     android:textSize="@dimen/d11" />
             </LinearLayout>
         </LinearLayout>
