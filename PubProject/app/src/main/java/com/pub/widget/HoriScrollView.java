@@ -24,8 +24,8 @@ public class HoriScrollView extends LinearLayout {
     private Context mContext;
     private HorizontalScrollView scrollView;
     private LinearLayout linearLayout;
-    private TextView rightTextView;
     private int width;//屏幕的宽度
+    private int textViewWidth = 0;
 
     public HoriScrollView(Context context) {
         super(context);
@@ -50,20 +50,6 @@ public class HoriScrollView extends LinearLayout {
         this.setOrientation(HORIZONTAL);
         this.setGravity(Gravity.CENTER);
         initScrollView();
-        initRightTextView();
-    }
-
-    /**
-     * 初始化右边的View
-     */
-    private void initRightTextView() {
-        rightTextView = new TextView(mContext);
-        rightTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 15);
-        rightTextView.setText("...");
-        rightTextView.setGravity(Gravity.CENTER);
-        rightTextView.setPadding(30, 0, 30, 0);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
-        this.addView(rightTextView, params);
     }
 
     /**
@@ -71,7 +57,7 @@ public class HoriScrollView extends LinearLayout {
      */
     private void initScrollView() {
         scrollView = new HorizontalScrollView(mContext);
-        scrollView.setPadding(40, 0, 0, 0);
+        scrollView.setPadding(40, 0, 40, 0);
         scrollView.setHorizontalScrollBarEnabled(false);
         LinearLayout.LayoutParams params1 = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         params1.weight = 1;
@@ -80,7 +66,6 @@ public class HoriScrollView extends LinearLayout {
         linearLayout = new LinearLayout(mContext);
         linearLayout.setOrientation(HORIZONTAL);
         linearLayout.setGravity(Gravity.CENTER | Gravity.LEFT);
-        linearLayout.setPadding(0, 0, 60, 0);
         FrameLayout.LayoutParams params2 = new FrameLayout.LayoutParams(LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         scrollView.addView(linearLayout, params2);
     }
@@ -98,19 +83,22 @@ public class HoriScrollView extends LinearLayout {
         }
     }
 
+    private TextView textView;
+
     /**
      * 初始化左边的View的Item
      */
     private void initLeftViewItem(String title, final int position) {
-        TextView textView = new TextView(mContext);
-        textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
+        textView = new TextView(mContext);
         textView.setText(title);
         textView.setGravity(Gravity.CENTER);
         textView.setPadding(30, 0, 30, 0);
         if (position == 0) {
             textView.setTextColor(0xff0097d7);
+            textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
         } else {
             textView.setTextColor(0xff666666);
+            textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 12);
         }
         textViews.add(textView);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
@@ -119,6 +107,7 @@ public class HoriScrollView extends LinearLayout {
             @Override
             public void onClick(View view) {
                 setTextColor(position);
+                scrollView.smoothScrollTo(view.getLeft() - (width / 2 - view.getWidth() / 2), 0);
             }
         });
     }
@@ -130,13 +119,32 @@ public class HoriScrollView extends LinearLayout {
      */
     private void setTextColor(int position) {
         if (textViews != null && data != null) {
-            for (int i = 0; i < data.size(); i++) {
+            for (int i = position - 1; i >= 0; i--) {
+                textViews.get(i).setTextColor(0xff666666);
+                textViews.get(i).setTextSize(TypedValue.COMPLEX_UNIT_DIP, 12);
+            }
+
+            for (int i = position + 1; i < data.size(); i++) {
+                textViews.get(i).setTextColor(0xff666666);
+                textViews.get(i).setTextSize(TypedValue.COMPLEX_UNIT_DIP, 12);
+            }
+
+            //设置字体颜色
+            textViews.get(position).setTextColor(0xff0097d7);
+            //设置字体大小
+            textViews.get(position).setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
+
+            /*for (int i = 0; i < data.size(); i++) {
                 if (i == position) {
+                    //设置字体颜色
                     textViews.get(i).setTextColor(0xff0097d7);
+                    //设置字体大小
+                    textViews.get(i).setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
                 } else {
                     textViews.get(i).setTextColor(0xff666666);
+                    textViews.get(i).setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
                 }
-            }
+            }*/
         }
     }
 
