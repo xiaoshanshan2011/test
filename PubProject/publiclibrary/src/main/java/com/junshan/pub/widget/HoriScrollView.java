@@ -1,4 +1,4 @@
-package com.pub.widget;
+package com.junshan.pub.widget;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -107,7 +107,7 @@ public class HoriScrollView extends LinearLayout {
             @Override
             public void onClick(View view) {
                 setTextColor(position);
-                scrollView.smoothScrollTo(view.getLeft() - (width / 2 - view.getWidth() / 2), 0);
+                scrollView.smoothScrollTo(view.getLeft() - (scrollView.getWidth() / 2 - view.getWidth() / 2), 0);
             }
         });
     }
