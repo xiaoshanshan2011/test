@@ -44,7 +44,8 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, Object> 
     private Runnable runnableMian = new Runnable() {
         @Override
         public void run() {
-            startActivity(LoginActivity.class, null);
+            //startActivity(LoginActivity.class, null);
+            startFragment(TestActivity.class, null);
             finish();
         }
     };

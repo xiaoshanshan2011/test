@@ -81,7 +81,7 @@
             android:value="N3nmc9LkggwwA6tXSwtHBviaH4sgc5Kg" />
 
         <activity
-            android:name="com.pub.ui.activity.SplashActivity"
+            android:name=".ui.activity.SplashActivity"
             android:theme="@style/AppSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

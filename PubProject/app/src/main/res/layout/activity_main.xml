@@ -81,7 +81,7 @@
                             android:src="@mipmap/ic_msg" />
                     </com.zhy.android.percent.support.PercentRelativeLayout>
 
-                    <com.pub.widget.HoriScrollView
+                    <com.junshan.pub.widget.HoriScrollView
                         android:id="@+id/hs_type"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
