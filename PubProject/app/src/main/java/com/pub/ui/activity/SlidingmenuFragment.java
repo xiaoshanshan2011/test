@@ -13,8 +13,6 @@ import com.pub.presenter.SlidingmenuPresenter;
 import com.pub.ui.BaseFragment;
 import com.shan.netlibrary.net.BaseBean;
 
-//import com.pub.net.BaseBean;
-
 /**
  * 侧滑菜单
  * Created by chenjunshan on 2017-12-21.

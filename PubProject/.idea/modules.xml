@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/merchant/merchant.iml" filepath="$PROJECT_DIR$/merchant/merchant.iml" />
       <module fileurl="file://$PROJECT_DIR$/netlibrary/netlibrary.iml" filepath="$PROJECT_DIR$/netlibrary/netlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/publiclibrary/publiclibrary.iml" filepath="$PROJECT_DIR$/publiclibrary/publiclibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharelibrary/sharelibrary.iml" filepath="$PROJECT_DIR$/sharelibrary/sharelibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
