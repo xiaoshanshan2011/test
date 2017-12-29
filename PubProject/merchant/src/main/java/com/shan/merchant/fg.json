@@ -1,0 +1,71 @@
+{
+  "pakege": "com.shan.merchant",
+  "author": "chenjunshan",
+  "data": [
+    {
+      "path": "ui/fragment",
+      "menu": [
+        {
+          "isList": false,
+          "title": "入住协议",
+          "name": "rzxy"
+        },
+        {
+          "isList": false,
+          "title": "入驻申请--第一步",
+          "name": "rzsq1"
+        },
+        {
+          "isList": false,
+          "title": "入驻申请--第三步",
+          "name": "rzsq3"
+        },
+        {
+          "isList": false,
+          "title": "入驻申请--第四步",
+          "name": "rzsq4"
+        },
+        {
+          "isList": false,
+          "title": "入驻申请--第四步",
+          "name": "rzsq4"
+        },
+        {
+          "isList": false,
+          "title": "商家Tab",
+          "name": "sjtab"
+        },
+        {
+          "isList": false,
+          "title": "商店",
+          "name": "sd"
+        },
+        {
+          "isList": false,
+          "title": "商品",
+          "name": "sp"
+        },
+        {
+          "isList": true,
+          "title": "评价",
+          "name": "pj"
+        },
+        {
+          "isList": false,
+          "title": "配送方式设置",
+          "name": "psfssz"
+        },
+        {
+          "isList": false,
+          "title": "添加商品",
+          "name": "tjsp"
+        },
+        {
+          "isList": false,
+          "title": "添加商品预览",
+          "name": "tjspyl"
+        }
+      ]
+    }
+  ]
+}

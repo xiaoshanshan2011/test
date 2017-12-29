@@ -16,4 +16,16 @@
     <string name="str_cwsj">成为商家</string>
     <string name="str_tjyj">推荐有奖</string>
     <string name="str_ptyh">普通用户</string>
+    <string name="str_rzxy">入住协议</string>
+    <string name="str_rzsq">入驻申请</string>
+    <string name="str_sq">商家</string>
+    <string name="str_sd">商店</string>
+    <string name="str_sp">商品</string>
+    <string name="str_pj">评价</string>
+    <string name="str_pssssz">配送方式设置</string>
+    <string name="str_tjsp">添加商品</string>
+    <string name="str_tjspyl">添加商品预览</string>
+    <string name="str_gldd">管理订单</string>
+    <string name="str_cydz">常用地址</string>
+    <string name="str_glsd">管理商店</string>
 </resources>

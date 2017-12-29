@@ -19,55 +19,78 @@
             android:layout_weight="1"
             android:gravity="center|top"
             android:orientation="vertical">
-
-            <com.zhy.android.percent.support.PercentLinearLayout
+            <com.zhy.android.percent.support.PercentRelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/color_f0f0f0"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/d15">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="50dp"
-                    android:src="@mipmap/ic_user_defualt"
-                    app:layout_heightPercent="25%w"
-                    app:layout_widthPercent="25%w" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/d10"
-                    android:text="175****8654"
-                    android:textColor="@color/color_666666"
-                    android:textSize="@dimen/d18" />
-
+                android:layout_height="wrap_content">
                 <com.zhy.android.percent.support.PercentLinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:background="@color/color_f0f0f0"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/d15">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:src="@mipmap/ic_xing"
-                        app:layout_heightPercent="6%w"
-                        app:layout_widthPercent="6%w" />
+                        android:layout_marginTop="50dp"
+                        android:src="@mipmap/ic_user_defualt"
+                        app:layout_heightPercent="25%w"
+                        app:layout_widthPercent="25%w" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:text="@string/str_ptyh"
+                        android:layout_marginTop="@dimen/d10"
+                        android:text="175****8654"
                         android:textColor="@color/color_666666"
-                        android:textSize="@dimen/d12" />
-                </com.zhy.android.percent.support.PercentLinearLayout>
+                        android:textSize="@dimen/d18" />
 
-            </com.zhy.android.percent.support.PercentLinearLayout>
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:src="@mipmap/ic_xing"
+                            app:layout_heightPercent="6%w"
+                            app:layout_widthPercent="6%w" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/str_ptyh"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/d12" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="@dimen/d8"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/ic_setting"
+                    app:layout_heightPercent="6%h"
+                    app:layout_widthPercent="6%h" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/d8"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/ic_kefu"
+                    app:layout_heightPercent="6%h"
+                    app:layout_widthPercent="6%h" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
 
 
             <com.zhy.android.percent.support.PercentLinearLayout
@@ -91,13 +114,13 @@
                     android:layout_marginLeft="12dp"
                     android:text="@string/str_qb"
                     android:textColor="@color/color_666666"
-                    android:textSize="@dimen/d15" />
+                    android:textSize="@dimen/d13" />
             </com.zhy.android.percent.support.PercentLinearLayout>
 
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:gravity="center|left"
                 android:orientation="horizontal"
                 android:paddingLeft="40dp">
@@ -113,15 +136,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
-                    android:text="@string/str_dd"
+                    android:text="@string/str_gldd"
                     android:textColor="@color/color_666666"
-                    android:textSize="@dimen/d15" />
+                    android:textSize="@dimen/d13" />
             </com.zhy.android.percent.support.PercentLinearLayout>
 
             <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_cwsj"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:gravity="center|left"
                 android:orientation="horizontal"
                 android:paddingLeft="40dp">
@@ -137,15 +161,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
-                    android:text="@string/str_kf"
+                    android:text="@string/str_cwsj"
                     android:textColor="@color/color_666666"
-                    android:textSize="@dimen/d15" />
+                    android:textSize="@dimen/d13" />
             </com.zhy.android.percent.support.PercentLinearLayout>
 
             <com.zhy.android.percent.support.PercentLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:gravity="center|left"
                 android:orientation="horizontal"
                 android:paddingLeft="40dp">
@@ -161,62 +185,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
-                    android:text="@string/str_sz"
+                    android:text="@string/str_cydz"
                     android:textColor="@color/color_666666"
-                    android:textSize="@dimen/d15" />
+                    android:textSize="@dimen/d13" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_glsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@mipmap/ic_setting"
+                    app:layout_heightPercent="8%w"
+                    app:layout_widthPercent="8%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/str_glsd"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/d13" />
             </com.zhy.android.percent.support.PercentLinearLayout>
         </com.zhy.android.percent.support.PercentLinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginBottom="@dimen/d15"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_heightPercent="16%w">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@mipmap/ic_sjrz" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/str_cwsj"
-                    android:textColor="@color/color_666666"
-                    android:textSize="@dimen/d11" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/d20"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@mipmap/ic_tjyj" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/str_tjyj"
-                    android:textColor="@color/color_666666"
-                    android:textSize="@dimen/d11" />
-            </LinearLayout>
-        </LinearLayout>
     </com.zhy.android.percent.support.PercentLinearLayout>
 </layout>

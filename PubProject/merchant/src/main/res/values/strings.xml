@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Merchant</string>
+    <string name="str_rzxy">入驻协议</string>
+    <string name="str_hint1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</string>
+    <string name="app_ty">同意</string>
+    <string name="str_rzsq">入驻申请</string>
+    <string name="str_hint2">营业执照的姓名需和身份证信息一致</string>
+    <string name="str_xyb">下一步</string>
+    <string name="str_shxx">商户信息</string>
+    <string name="str_shlx">商户类型：</string>
+    <string name="str_qxzshlx">请选择商户类型</string>
+    <string name="str_jylx">经营类型：</string>
+    <string name="str_qxzjylx">请选择经营类型</string>
+    <string name="str_xcy">宣传语：</string>
+    <string name="str_qsrxcy">请输入宣传语</string>
+    <string name="str_qrxx">确认信息</string>
+    <string name="str_xm">姓名：</string>
+    <string name="str_sfzh">身份证号：</string>
+    <string name="str_yzxx">业主信息</string>
+    <string name="str_shmc">商户名称：</string>
+    <string name="str_jyz">经营者：</string>
+    <string name="str_yysj">营业时间：</string>
+    <string name="str_dpwz">商铺位置：</string>
+    <string name="str_shenqing">申请</string>
+    <string name="str_sd">商店</string>
+    <string name="str_splb">商品类别</string>
+    <string name="str_yp">饮品</string>
+    <string name="str_qtsz">其他设置</string>
 </resources>

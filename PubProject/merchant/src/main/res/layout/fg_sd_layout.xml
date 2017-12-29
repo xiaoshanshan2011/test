@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f4f4f4"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/d1"
+            app:layout_heightPercent="50%w">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_md" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#40000000"
+                android:paddingBottom="@dimen/d8"
+                android:paddingLeft="@dimen/d10"
+                android:paddingRight="@dimen/d10"
+                android:paddingTop="@dimen/d8"
+                android:text="德州扒鹅真好吃，香喷喷的"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d13" />
+        </FrameLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d10"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="@dimen/d10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:layout_marginRight="@dimen/d10"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginRight="@dimen/d15"
+                        android:layout_weight="1"
+                        android:background="@color/color_f0f0f0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/d13"
+                        android:paddingLeft="@dimen/d13"
+                        android:paddingTop="@dimen/d13"
+                        android:text="@string/str_splb"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/d13" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginRight="@dimen/d15"
+                        android:layout_weight="1"
+                        android:background="@color/color_f0f0f0" />
+
+                </LinearLayout>
+
+                <com.junshan.pub.widget.BaseGridView
+                    android:id="@+id/gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:numColumns="4" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d10"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.8dp"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_marginRight="@dimen/d15"
+                    android:layout_weight="1"
+                    android:background="@color/color_f0f0f0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/d13"
+                    android:paddingLeft="@dimen/d13"
+                    android:paddingTop="@dimen/d13"
+                    android:text="@string/str_qtsz"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/d13" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.8dp"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:layout_marginRight="@dimen/d15"
+                    android:layout_weight="1"
+                    android:background="@color/color_f0f0f0" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

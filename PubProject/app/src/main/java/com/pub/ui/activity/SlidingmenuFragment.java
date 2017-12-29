@@ -11,9 +11,10 @@ import com.pub.contract.SlidingmenuContract;
 import com.pub.databinding.FgSlidingmenuLayoutBinding;
 import com.pub.presenter.SlidingmenuPresenter;
 import com.pub.ui.BaseFragment;
+import com.shan.merchant.ui.fragment.RzxyFragment;
+import com.shan.merchant.ui.fragment.SdFragment;
+import com.shan.merchant.ui.fragment.SjtabFragment;
 import com.shan.netlibrary.net.BaseBean;
-
-//import com.pub.net.BaseBean;
 
 /**
  * 侧滑菜单
@@ -45,6 +46,8 @@ public class SlidingmenuFragment extends BaseFragment<FgSlidingmenuLayoutBinding
     protected void initEvent() {
         super.initEvent();
         mBinding.getRoot().setOnClickListener(this);
+        mBinding.llCwsj.setOnClickListener(this);
+        mBinding.llGlsd.setOnClickListener(this);
     }
 
     @Override
@@ -61,7 +64,13 @@ public class SlidingmenuFragment extends BaseFragment<FgSlidingmenuLayoutBinding
     public void onClick(View view) {
         super.onClick(view);
         switch (view.getId()) {
-
+            case R.id.ll_cwsj:
+                startFragment(RzxyFragment.class, null);
+                break;
+            case R.id.ll_glsd:
+                //startFragment(SjtabFragment.class, null);
+                startFragment(SdFragment.class, null);
+                break;
         }
     }
 

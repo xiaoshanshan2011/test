@@ -78,6 +78,7 @@ public abstract class LibFragment<T extends ViewDataBinding, D> extends Fragment
                 linearLayout = new LinearLayout(getActivity());
                 linearLayout.setOrientation(LinearLayout.VERTICAL);
                 linearLayout.addView(titleBinding.getRoot(), params);
+                linearLayout.setBackgroundResource(R.color.color_f4f4f4);
                 mBinding = DataBindingUtil.inflate(inflater, bindLayout(), container, false);
                 linearLayout.addView(mBinding.getRoot(), params_match);
                 initOnCreate(savedInstanceState);
@@ -229,6 +230,10 @@ public abstract class LibFragment<T extends ViewDataBinding, D> extends Fragment
 
     public void setTitle(String text) {
         titleBinding.tvTitle.setText(text);
+    }
+
+    public void setTitle(int text) {
+        titleBinding.tvTitle.setText(getString(text));
     }
 
     @Override

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/d10"
+                android:src="@mipmap/ic_launcher"
+                app:layout_heightPercent="30%w" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/d10"
+                android:src="@mipmap/ic_launcher"
+                app:layout_heightPercent="30%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/color_f0f0f0" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/d10"
+                android:src="@mipmap/ic_launcher"
+                app:layout_heightPercent="30%w" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/d10"
+                android:src="@mipmap/ic_launcher"
+                app:layout_heightPercent="30%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/color_f0f0f0" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/d10"
+                android:src="@mipmap/ic_launcher"
+                app:layout_heightPercent="30%w" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/d10"
+                android:src="@mipmap/ic_launcher"
+                app:layout_heightPercent="30%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/color_f0f0f0" />
+
+        <TextView
+            android:background="@color/white"
+            android:paddingBottom="@dimen/d10"
+            android:paddingTop="@dimen/d10"
+            android:textSize="@dimen/d12"
+            android:textColor="@color/color_999999"
+            android:gravity="center"
+            android:text="@string/str_hint2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_ok"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/d14"
+            android:text="@string/str_xyb"
+            android:layout_margin="@dimen/d30"
+            android:background="@drawable/shape_blue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</layout>
