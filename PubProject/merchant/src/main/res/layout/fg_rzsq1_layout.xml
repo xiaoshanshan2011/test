@@ -5,110 +5,194 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/color_f4f4f4"
         android:orientation="vertical">
 
         <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/d20"
+            android:paddingTop="@dimen/d20">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:padding="@dimen/d10"
-                android:src="@mipmap/ic_launcher"
-                app:layout_heightPercent="30%w" />
+                app:layout_heightPercent="18%w">
 
-            <ImageView
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d40"
+                    android:layout_marginRight="@dimen/d40">
+
+                    <ImageView
+                        android:id="@+id/iv_zm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_sfz_zm2" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:padding="@dimen/d10"
-                android:src="@mipmap/ic_launcher"
-                app:layout_heightPercent="30%w" />
+                app:layout_heightPercent="18%w">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d40"
+                    android:layout_marginRight="@dimen/d40">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_sfz_zm" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
         </com.zhy.android.percent.support.PercentLinearLayout>
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.8dp"
-            android:background="@color/color_f0f0f0" />
+            android:layout_height="0.5dp"
+            android:background="@color/color_eeeeee" />
 
         <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/d20"
+            android:paddingTop="@dimen/d20">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:padding="@dimen/d10"
-                android:src="@mipmap/ic_launcher"
-                app:layout_heightPercent="30%w" />
+                app:layout_heightPercent="18%w">
 
-            <ImageView
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d40"
+                    android:layout_marginRight="@dimen/d40">
+
+                    <ImageView
+                        android:id="@+id/iv_fm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_sfz_fm2" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:padding="@dimen/d10"
-                android:src="@mipmap/ic_launcher"
-                app:layout_heightPercent="30%w" />
+                app:layout_heightPercent="18%w">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d40"
+                    android:layout_marginRight="@dimen/d40">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_sfz_fm" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
         </com.zhy.android.percent.support.PercentLinearLayout>
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.8dp"
-            android:background="@color/color_f0f0f0" />
+            android:layout_height="0.5dp"
+            android:background="@color/color_eeeeee" />
 
         <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/d20"
+            android:paddingTop="@dimen/d20">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:padding="@dimen/d10"
-                android:src="@mipmap/ic_launcher"
-                app:layout_heightPercent="30%w" />
+                app:layout_heightPercent="18%w">
 
-            <ImageView
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d40"
+                    android:layout_marginRight="@dimen/d40">
+
+                    <ImageView
+                        android:id="@+id/iv_yyzz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_yyzz2" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:padding="@dimen/d10"
-                android:src="@mipmap/ic_launcher"
-                app:layout_heightPercent="30%w" />
+                app:layout_heightPercent="18%w">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d40"
+                    android:layout_marginRight="@dimen/d40">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_yyzz" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
         </com.zhy.android.percent.support.PercentLinearLayout>
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.8dp"
-            android:background="@color/color_f0f0f0" />
+            android:layout_height="0.5dp"
+            android:background="@color/color_eeeeee" />
 
         <TextView
-            android:background="@color/white"
-            android:paddingBottom="@dimen/d10"
-            android:paddingTop="@dimen/d10"
-            android:textSize="@dimen/d12"
-            android:textColor="@color/color_999999"
-            android:gravity="center"
-            android:text="@string/str_hint2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/d10"
+            android:paddingLeft="@dimen/d30"
+            android:paddingTop="@dimen/d10"
+            android:text="@string/str_hint2"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/d12" />
+
         <Button
             android:id="@+id/btn_ok"
-            android:textColor="@color/color_333333"
-            android:textSize="@dimen/d14"
-            android:text="@string/str_xyb"
-            android:layout_margin="@dimen/d30"
-            android:background="@drawable/shape_blue"
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/d30"
+            android:background="@drawable/btn_theme"
+            android:text="@string/str_xyb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d14" />
     </LinearLayout>
 </layout>

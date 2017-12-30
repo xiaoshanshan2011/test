@@ -498,6 +498,15 @@ public abstract class LibFragment<T extends ViewDataBinding, D> extends Fragment
                     photoResult(PhotoUtils.getImagePath(getActivity(), imageUri));
                 }
                 break;
+            case PhotoUtils.File_REQUEST:
+                //选择文件回调
+                try {
+                    Uri imageUri = data.getData();
+                    photoResult(imageUri.getPath());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                break;
             case 99:
                 try {
                     Uri uri = data.getData();//得到uri，后面就是将uri转化成file的过程。

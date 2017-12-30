@@ -8,6 +8,7 @@ import android.view.View;
 import com.pub.R;
 import com.pub.databinding.ActivitySplashBinding;
 import com.pub.ui.BaseActivity;
+import com.shan.merchant.ui.fragment.RzxyFragment;
 
 
 /**
@@ -45,7 +46,8 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, Object> 
         @Override
         public void run() {
             //startActivity(LoginActivity.class, null);
-            startFragment(TestActivity.class, null);
+            startFragment(RzxyFragment.class, null);
+            //startFragment(TestActivity.class, null);
             finish();
         }
     };

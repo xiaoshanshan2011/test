@@ -89,7 +89,7 @@ public class ImageCacheUtils {
      * @param imageUrl
      * @param imageView
      */
-    public static void loadImage2(Context context, String imageUrl, final ImageView imageView) {
+    public static void loadLocalImage(Context context, String imageUrl, final ImageView imageView) {
         if (TextUtils.isEmpty(imageUrl) || imageView == null)
             return;
         Glide.with(context).load(imageUrl).into(imageView);

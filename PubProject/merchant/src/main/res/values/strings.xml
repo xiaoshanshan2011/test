@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Merchant</string>
     <string name="str_rzxy">入驻协议</string>
-    <string name="str_hint1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</string>
+    <string name="str_hint1">&#8195;&#8195;第二条订立本协议的目的在于确保甲、乙双方忠实地履行本协议规定的双方的职责和权利。乙方作为单独的企业法人或经营者进行经济活动。因此，他必须遵守对所 有企业法人或经营者共同的法律要求，特别是有关资格的规则以及社会的、财务的商业要求。作为一个企业法人或经营者，乙方应就其活动自负一切风险和从合法经 营中获利。乙方不是甲方的代理人，也不是甲方的雇员和合伙人。乙方不是作为甲方委托代表，乙方无权以甲方的名义签定协议，使甲方在任何方面对第三人承担责 任，或由甲方负担费用，承担任何义务。订立本协议并未授予乙方任何约束甲方或甲方有关企业之权利，甲方对本协议任何条款有最终的解释权</string>
     <string name="app_ty">同意</string>
     <string name="str_rzsq">入驻申请</string>
     <string name="str_hint2">营业执照的姓名需和身份证信息一致</string>
@@ -26,4 +26,11 @@
     <string name="str_splb">商品类别</string>
     <string name="str_yp">饮品</string>
     <string name="str_qtsz">其他设置</string>
+    <string name="str_hint">提示：</string>
+    <string name="str_zpyz">自拍一张</string>
+    <string name="str_syxc">使用相册</string>
+    <string name="str_xzwj">选择文件</string>
+    <string name="str_pz">拍照</string>
+    <string name="str_xc">相册</string>
+    <string name="str_sccg">上传成功</string>
 </resources>

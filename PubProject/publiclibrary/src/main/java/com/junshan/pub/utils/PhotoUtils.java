@@ -17,6 +17,7 @@ import android.support.v4.app.Fragment;
 public class PhotoUtils {
     public static final int CHOOSE_PHOTO_REQUEST = 111;
     public static final int TAKE_PHOTO_REQUEST = 211;
+    public static final int File_REQUEST = 311;
     public static Uri imageUri;
     private int flag;
     public static String FLAG = "flag";
