@@ -41,10 +41,12 @@ import android.widget.TextView;
 
 import com.junshan.pub.R;
 import com.junshan.pub.listener.PagerListenter;
+import com.junshan.pub.utils.DimenUtils;
 
 import java.util.Locale;
 
 public class PagerSlidingTabStrip extends HorizontalScrollView {
+    private Context mContext;
 
     public interface IconTabProvider {
         public int getPageIconResId(int position);
@@ -91,7 +93,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
     private int tabPadding = 20;
     private int dividerWidth = 1;
 
-    private int tabTextSize = 12;
+    private int tabTextSize = 13;
     private int tabTextColor = 0xFF666666;
     private Typeface tabTypeface = null;
     private int tabTypefaceStyle = Typeface.BOLD;
@@ -108,22 +110,27 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         this.pagerListenter = pagerListenter;
     }
 
+    private int jessonTextSize;
+
     public PagerSlidingTabStrip(Context context) {
         this(context, null);
+        mContext = context;
     }
 
     public PagerSlidingTabStrip(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
+        mContext = context;
     }
 
     public PagerSlidingTabStrip(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-
+        mContext = context;
         setFillViewport(true);
         setWillNotDraw(false);
 
         tabsContainer = new LinearLayout(context);
         tabsContainer.setOrientation(LinearLayout.HORIZONTAL);
+        tabsContainer.setGravity(Gravity.CENTER);
         tabsContainer.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
         addView(tabsContainer);
 
@@ -135,13 +142,13 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         dividerPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dividerPadding, dm);
         tabPadding = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, tabPadding, dm);
         dividerWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dividerWidth, dm);
-        tabTextSize = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, tabTextSize, dm);
+        //tabTextSize = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, tabTextSize, dm);
 
         // get system attrs (android:textSize and android:textColor)
 
         TypedArray a = context.obtainStyledAttributes(attrs, ATTRS);
 
-        tabTextSize = a.getDimensionPixelSize(0, tabTextSize);
+        //tabTextSize = a.getDimensionPixelSize(0, tabTextSize);
         tabTextColor = a.getColor(1, tabTextColor);
 
         a.recycle();
@@ -241,7 +248,15 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         tab.setText(title);
         tab.setGravity(Gravity.CENTER);
         tab.setSingleLine();
+        int ps = DimenUtils.dp2px(mContext, paddingSize);
+        tab.setPadding(ps, 0, ps, 0);
         addTab(position, tab);
+    }
+
+    private int paddingSize = 13;
+
+    private void setPadding(int size) {
+        paddingSize = size;
     }
 
     private void addIconTab(final int position, int resId) {
@@ -285,7 +300,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 
             if (v instanceof TextView) {
                 TextView tab = (TextView) v;
-                tab.setTextSize(TypedValue.COMPLEX_UNIT_PX, tabTextSize);
+                tab.setTextSize(TypedValue.COMPLEX_UNIT_DIP, tabTextSize);
                 tab.setTypeface(tabTypeface, tabTypefaceStyle);
                 //tab.setTextColor(tabTextColor);
 

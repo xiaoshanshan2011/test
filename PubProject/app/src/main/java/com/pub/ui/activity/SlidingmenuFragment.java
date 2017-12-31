@@ -12,7 +12,6 @@ import com.pub.databinding.FgSlidingmenuLayoutBinding;
 import com.pub.presenter.SlidingmenuPresenter;
 import com.pub.ui.BaseFragment;
 import com.shan.merchant.ui.fragment.RzxyFragment;
-import com.shan.merchant.ui.fragment.SdFragment;
 import com.shan.merchant.ui.fragment.SjtabFragment;
 import com.shan.netlibrary.net.BaseBean;
 
@@ -68,8 +67,7 @@ public class SlidingmenuFragment extends BaseFragment<FgSlidingmenuLayoutBinding
                 startFragment(RzxyFragment.class, null);
                 break;
             case R.id.ll_glsd:
-                //startFragment(SjtabFragment.class, null);
-                startFragment(SdFragment.class, null);
+                startFragment(SjtabFragment.class, null);
                 break;
         }
     }

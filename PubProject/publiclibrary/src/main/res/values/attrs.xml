@@ -93,6 +93,7 @@
         <attr name="pstsIndicatorHeight" format="dimension" />
         <attr name="pstsUnderlineHeight" format="dimension" />
         <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabTextSize" format="dimension" />
         <attr name="pstsTabPaddingLeftRight" format="dimension" />
         <attr name="pstsScrollOffset" format="dimension" />
         <attr name="pstsTabBackground" format="reference" />

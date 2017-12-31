@@ -34,6 +34,7 @@ public class SdFragment extends BaseFragment<FgSdLayoutBinding, Object> implemen
     public void initTitleBar() {
         super.initTitleBar();
         setTitle(R.string.str_sd);
+        titleBinding.getRoot().setVisibility(View.GONE);
     }
 
     @Override
@@ -77,16 +78,16 @@ public class SdFragment extends BaseFragment<FgSdLayoutBinding, Object> implemen
     protected void initData() {
         super.initData();
         List<SplbBean> data = new ArrayList<>();
-        data.add(new SplbBean("",""));
-        data.add(new SplbBean("",""));
-        data.add(new SplbBean("",""));
-        data.add(new SplbBean("",""));
-        data.add(new SplbBean("",""));
-        data.add(new SplbBean("",""));
-        data.add(new SplbBean("",""));
-        data.add(new SplbBean("",""));
+        data.add(new SplbBean("", ""));
+        data.add(new SplbBean("", ""));
+        data.add(new SplbBean("", ""));
+        data.add(new SplbBean("", ""));
+        data.add(new SplbBean("", ""));
+        data.add(new SplbBean("", ""));
+        data.add(new SplbBean("", ""));
+        data.add(new SplbBean("", ""));
 
-        mBinding.gv.setAdapter(new CommonAdapter<FgSdItemLayoutBinding,SplbBean>(getActivity(),R.layout.fg_sd_item_layout,data) {
+        mBinding.gv.setAdapter(new CommonAdapter<FgSdItemLayoutBinding, SplbBean>(getActivity(), R.layout.fg_sd_item_layout, data) {
             @Override
             protected void getItem(FgSdItemLayoutBinding binding, SplbBean bean, int position) {
 

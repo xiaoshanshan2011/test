@@ -56,7 +56,6 @@ public class VerScrollView extends LinearLayout {
      */
     private void initScrollView() {
         scrollView = new ScrollView(mContext);
-        scrollView.setPadding(0, 40, 0, 40);
         scrollView.setVerticalScrollBarEnabled(false);
         LayoutParams params1 = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         params1.weight = 1;
@@ -91,7 +90,7 @@ public class VerScrollView extends LinearLayout {
         textView = new TextView(mContext);
         textView.setText(title);
         textView.setGravity(Gravity.CENTER);
-        textView.setPadding(0, 30, 0, 30);
+        textView.setPadding(0, 40, 0, 40);
         if (position == 0) {
             textView.setTextColor(0xff0097d7);
             textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);

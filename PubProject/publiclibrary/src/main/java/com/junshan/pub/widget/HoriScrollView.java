@@ -57,7 +57,6 @@ public class HoriScrollView extends LinearLayout {
      */
     private void initScrollView() {
         scrollView = new HorizontalScrollView(mContext);
-        scrollView.setPadding(40, 0, 40, 0);
         scrollView.setHorizontalScrollBarEnabled(false);
         LinearLayout.LayoutParams params1 = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         params1.weight = 1;
@@ -92,7 +91,7 @@ public class HoriScrollView extends LinearLayout {
         textView = new TextView(mContext);
         textView.setText(title);
         textView.setGravity(Gravity.CENTER);
-        textView.setPadding(30, 0, 30, 0);
+        textView.setPadding(40, 0, 40, 0);
         if (position == 0) {
             textView.setTextColor(0xff0097d7);
             textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
