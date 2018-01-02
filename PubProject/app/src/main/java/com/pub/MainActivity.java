@@ -135,6 +135,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, Object> impl
             MapStatus.Builder builder = new MapStatus.Builder();
             builder.target(ll).zoom(17.0f);
             mBaiduMap.animateMapStatus(MapStatusUpdateFactory.newMapStatus(builder.build()));
+
+            addImg(20,location);
         }
     }
 
@@ -204,18 +206,16 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, Object> impl
         data.add("水果");
         data.add("水果");
         mBinding.hsType.bindData(data);
-
-        addImg(data);
     }
 
 
     // 初始化全局 bitmap 信息，不用时及时 recycle
-    private void addImg(final List<String> datas) {
+    private void addImg(int size,BDLocation location) {
         Random random = new Random();
         recycBitmap();
         imgs = new ArrayList<>();
         bds = new ArrayList<>();
-        for (int i = 0; i < datas.size(); i++) {
+        for (int i = 0; i < size; i++) {
             //设置经纬度
             double latRandom = 0;
             double lonRandom = 0;
@@ -233,8 +233,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, Object> impl
                 latRandom = -(random.nextInt(10) + 1) * 0.0003;
                 lonRandom = (random.nextInt(10) + 1) * 0.0003;
             }
-            double t = 22.639424;
-            double n = 114.038094;
+            double t = location.getLatitude();
+            double n = location.getLongitude();
             double lat = t + latRandom;
             double lon = n + lonRandom;
             final int j = i;

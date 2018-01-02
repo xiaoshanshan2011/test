@@ -28,4 +28,8 @@
     <string name="str_gldd">管理订单</string>
     <string name="str_cydz">常用地址</string>
     <string name="str_glsd">管理商店</string>
+    <string name="str_wdqb">我的钱包</string>
+    <string name="str_yhk">银行卡</string>
+    <string name="str_ye">余额</string>
+    <string name="str_xjq">现金券</string>
 </resources>

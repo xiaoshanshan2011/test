@@ -11,6 +11,7 @@ import com.pub.contract.SlidingmenuContract;
 import com.pub.databinding.FgSlidingmenuLayoutBinding;
 import com.pub.presenter.SlidingmenuPresenter;
 import com.pub.ui.BaseFragment;
+import com.pub.ui.fragment.money.WdqbFragment;
 import com.shan.merchant.ui.fragment.RzxyFragment;
 import com.shan.merchant.ui.fragment.SjtabFragment;
 import com.shan.netlibrary.net.BaseBean;
@@ -47,6 +48,7 @@ public class SlidingmenuFragment extends BaseFragment<FgSlidingmenuLayoutBinding
         mBinding.getRoot().setOnClickListener(this);
         mBinding.llCwsj.setOnClickListener(this);
         mBinding.llGlsd.setOnClickListener(this);
+        mBinding.llWdqb.setOnClickListener(this);
     }
 
     @Override
@@ -68,6 +70,9 @@ public class SlidingmenuFragment extends BaseFragment<FgSlidingmenuLayoutBinding
                 break;
             case R.id.ll_glsd:
                 startFragment(SjtabFragment.class, null);
+                break;
+            case R.id.ll_wdqb:
+                startFragment(WdqbFragment.class, null);
                 break;
         }
     }

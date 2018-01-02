@@ -1,69 +1,64 @@
 {
-  "pakege": "com.shan.merchant",
+  "pakege": "com.pub",
   "author": "chenjunshan",
   "data": [
     {
-      "path": "ui/fragment",
+      "path": "ui/fragment/money",
       "menu": [
         {
           "isList": false,
-          "title": "入住协议",
-          "name": "rzxy"
-        },
-        {
-          "isList": false,
-          "title": "入驻申请--第一步",
-          "name": "rzsq1"
-        },
-        {
-          "isList": false,
-          "title": "入驻申请--第三步",
-          "name": "rzsq3"
-        },
-        {
-          "isList": false,
-          "title": "入驻申请--第四步",
-          "name": "rzsq4"
-        },
-        {
-          "isList": false,
-          "title": "入驻申请--第四步",
-          "name": "rzsq4"
-        },
-        {
-          "isList": false,
-          "title": "商家Tab",
-          "name": "sjtab"
-        },
-        {
-          "isList": false,
-          "title": "商店",
-          "name": "sd"
-        },
-        {
-          "isList": false,
-          "title": "商品",
-          "name": "sp"
+          "title": "我的钱包",
+          "name": "wdqb"
         },
         {
           "isList": true,
-          "title": "评价",
-          "name": "pj"
+          "title": "银行卡",
+          "name": "yhk"
         },
         {
           "isList": false,
-          "title": "配送方式设置",
-          "name": "psfssz"
+          "title": "添加银行卡",
+          "name": "tjyhk"
         },
         {
           "isList": false,
-          "title": "添加商品",
-          "name": "tjsp"
+          "title": "支付设置",
+          "name": "zfsz"
         },
         {
           "isList": false,
-          "title": "添加商品预览",
-          "name": "tjspyl"
+          "title": "修改支付密码",
+          "name": "xgzfmm"
+        },
+        {
+          "isList": false,
+          "title": "找回支付密码",
+          "name": "zhzfmm"
+        },
+        {
+          "isList": false,
+          "title": "充值",
+          "name": "cz"
+        },
+        {
+          "isList": false,
+          "title": "提现",
+          "name": "tx"
+        },
+        {
+          "isList": true,
+          "title": "我的现金券",
+          "name": "wdxjq"
+        },
+        {
+          "isList": false,
+          "title": "余额",
+          "name": "ye"
+        },
+        {
+          "isList": true,
+          "title": "账户明细",
+          "name": "zhmx"
         }
       ]
     }
