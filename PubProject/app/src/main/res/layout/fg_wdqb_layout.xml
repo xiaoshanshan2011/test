@@ -10,7 +10,7 @@
         <com.zhy.android.percent.support.PercentLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/theme"
+            android:background="@drawable/shape_title_bg"
             android:orientation="horizontal"
             android:paddingBottom="@dimen/d20"
             android:paddingTop="@dimen/d20">

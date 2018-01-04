@@ -20,7 +20,7 @@
                     android:id="@+id/bar"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:background="@color/white" />
+                    android:background="@drawable/shape_title_bg" />
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -30,10 +30,10 @@
                         android:id="@+id/tabs"
                         android:layout_width="match_parent"
                         android:layout_height="40dip"
-                        android:background="@color/theme"
+                        android:background="@drawable/shape_title_bg"
                         app:JessonTextColorOff="@color/color_666666"
-                        app:JessonTextColorOn="@color/color_00aa90"
-                        app:pstsDividerColor="@color/theme"
+                        app:JessonTextColorOn="@color/white"
+                        app:pstsDividerColor="@color/transparent"
                         app:pstsIndicatorColor="@color/white"
                         app:pstsIndicatorHeight="0dp"
                         app:pstsShouldExpand="false"
@@ -45,7 +45,7 @@
                         android:layout_height="40dp"
                         android:background="@color/transparent"
                         android:padding="@dimen/d13"
-                        android:src="@mipmap/ic_back_black" />
+                        android:src="@mipmap/ic_white_back" />
                 </FrameLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>

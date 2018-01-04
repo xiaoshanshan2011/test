@@ -11,7 +11,6 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/d1"
             app:layout_heightPercent="50%w">
 
             <ImageView
