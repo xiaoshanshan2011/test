@@ -27,7 +27,15 @@ public class YeFragment extends BaseFragment<FgYeLayoutBinding, Object> implemen
     @Override
     public void initTitleBar() {
         super.initTitleBar();
+        setTitle(R.string.str_ye);
+        titleBinding.tvRight.setVisibility(View.VISIBLE);
+        titleBinding.tvRight.setText(getString(R.string.str_mx));
+    }
 
+    @Override
+    public void onRightClick() {
+        super.onRightClick();
+        startFragment(ZhmxFragment.class, null);
     }
 
     @Override

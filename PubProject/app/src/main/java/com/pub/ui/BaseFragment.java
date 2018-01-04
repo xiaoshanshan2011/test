@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
 
 import com.junshan.pub.ui.fragment.LibFragment;
+import com.pub.R;
 import com.pub.constant.Constants;
 import com.shan.netlibrary.net.CancelRequestListener;
 import com.shan.netlibrary.net.HttpBuilder;
@@ -153,4 +154,13 @@ public class BaseFragment<T extends ViewDataBinding, D> extends LibFragment<T, D
         cancelAllRequest();
     }
 
+
+    public void setTitleWhiteColor() {
+        if (titleBinding != null) {
+            titleBinding.statusBar.setBackgroundResource(R.color.white);
+            titleBinding.ll.setBackgroundResource(R.color.white);
+            titleBinding.btnLeft.setImageResource(R.mipmap.ic_back_black);
+            titleBinding.tvTitle.setTextColor(getResources().getColor(R.color.color_333333));
+        }
+    }
 }

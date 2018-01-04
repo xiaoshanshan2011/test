@@ -32,4 +32,14 @@
     <string name="str_yhk">银行卡</string>
     <string name="str_ye">余额</string>
     <string name="str_xjq">现金券</string>
+    <string name="str_smrz">实名认证</string>
+    <string name="str_zfsz">支付设置</string>
+    <string name="str_cz">充值</string>
+    <string name="str_tx">提现</string>
+    <string name="str_jtyh">交通银行</string>
+    <string name="str_xyk">信用卡</string>
+    <string name="str_wdyhk">我的银行卡</string>
+    <string name="str_mx">明细</string>
+    <string name="str_zhmx">账户明细</string>
+    <string name="str_yezh">余额账户（元）</string>
 </resources>

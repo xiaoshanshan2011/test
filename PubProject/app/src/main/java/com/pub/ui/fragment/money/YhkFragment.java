@@ -29,14 +29,14 @@ public class YhkFragment extends BaseFragment<FgYhkItemLayoutBinding, Object> im
     @Override
     public void initTitleBar() {
         super.initTitleBar();
-
+        setTitle(R.string.str_wdyhk);
     }
 
     @Override
     public void initOnCreate(@Nullable Bundle savedInstanceState) {
         super.initOnCreate(savedInstanceState);
         presenter = new YhkPresenter(getActivity(), this);
-
+        setTitleWhiteColor();
     }
 
     @Override
@@ -66,7 +66,7 @@ public class YhkFragment extends BaseFragment<FgYhkItemLayoutBinding, Object> im
         super.onLoadMore();
 
     }
-    
+
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -77,7 +77,7 @@ public class YhkFragment extends BaseFragment<FgYhkItemLayoutBinding, Object> im
     protected void initData() {
         super.initData();
         List<Object> data = new ArrayList<>();
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 3; i++) {
             data.add("");
         }
         setData(data);

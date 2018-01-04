@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="theme">#ffffff</color>
+    <color name="theme">#ff6560</color>
     <color name="color_687180">#687180</color>
     <color name="white">#ffffff</color>
     <color name="divider">#f4f4f4</color>
@@ -96,6 +96,7 @@
     <color name="color_ed93a7">#ed93a7</color>
     <color name="color_e86ec8">#e86ec8</color>
     <color name="color_ff6560">#ff6560</color>
+    <color name="color_ef7874">#ffef7874</color>
     <color name="color_ffdbe2">#ffdbe2</color>
     <color name="color_feea3c">#feea3c</color>
     <color name="color_eeeeee">#eeeeee</color>

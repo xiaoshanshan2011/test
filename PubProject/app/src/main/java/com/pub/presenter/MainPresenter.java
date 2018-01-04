@@ -15,7 +15,7 @@ import com.junshan.pub.utils.ScreenUtils;
 import com.pub.R;
 import com.pub.contract.MainContract;
 import com.pub.databinding.ActivityMainBinding;
-import com.pub.ui.activity.SlidingmenuFragment;
+import com.pub.ui.fragment.SlidingmenuFragment;
 import com.shan.netlibrary.net.HttpPresenter;
 
 /**

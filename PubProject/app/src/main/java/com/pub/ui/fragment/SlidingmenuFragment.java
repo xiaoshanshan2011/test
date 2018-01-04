@@ -1,4 +1,4 @@
-package com.pub.ui.activity;
+package com.pub.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

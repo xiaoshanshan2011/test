@@ -29,7 +29,7 @@ public class ZhmxFragment extends BaseFragment<FgZhmxItemLayoutBinding, Object> 
     @Override
     public void initTitleBar() {
         super.initTitleBar();
-
+        setTitle(R.string.str_zhmx);
     }
 
     @Override
@@ -66,7 +66,7 @@ public class ZhmxFragment extends BaseFragment<FgZhmxItemLayoutBinding, Object> 
         super.onLoadMore();
 
     }
-    
+
     @Override
     public void onDestroy() {
         super.onDestroy();

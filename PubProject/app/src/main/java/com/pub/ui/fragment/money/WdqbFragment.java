@@ -56,14 +56,40 @@ public class WdqbFragment extends BaseFragment<FgWdqbLayoutBinding, Object> impl
     @Override
     protected void initEvent() {
         super.initEvent();
-
+        mBinding.llYhk.setOnClickListener(this);
+        mBinding.llYe.setOnClickListener(this);
+        mBinding.llXjq.setOnClickListener(this);
+        mBinding.llSmrz.setOnClickListener(this);
+        mBinding.llZfsz.setOnClickListener(this);
+        mBinding.llCz.setOnClickListener(this);
+        mBinding.llTx.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         super.onClick(view);
         switch (view.getId()) {
-
+            case R.id.ll_yhk:
+                startFragment(YhkFragment.class, null);
+                break;
+            case R.id.ll_ye:
+                startFragment(YeFragment.class, null);
+                break;
+            case R.id.ll_xjq:
+                startFragment(WdxjqFragment.class, null);
+                break;
+            case R.id.ll_smrz:
+                //startFragment(Smrz.class, null);
+                break;
+            case R.id.ll_zfsz:
+                startFragment(ZfszFragment.class, null);
+                break;
+            case R.id.ll_cz:
+                startFragment(CzFragment.class, null);
+                break;
+            case R.id.ll_tx:
+                startFragment(TxFragment.class, null);
+                break;
         }
     }
 }
